@@ -45,6 +45,7 @@
                 score = ComputeSpareScore(score, i, roll);
                 score = ComputeStrikeScore(score, i, roll);
             }
+
             return score;
         }
         private int ComputeSpareScore(int score, int i, int[] roll)
