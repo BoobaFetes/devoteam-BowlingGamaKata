@@ -25,11 +25,9 @@ namespace BowlingGameKata.Tests
             // Arrange
             int rollCount = 0;
             for (var i = 0; i < 10; i++) rollCount = _game.AddRoll([1, 0]);
-
-            // Act
             Assert.Equal(10, rollCount);
 
-            // Assert
+            // Act + Assert
             Assert.Equal(10, _game.AddRoll([1, 0]));
         }
 
