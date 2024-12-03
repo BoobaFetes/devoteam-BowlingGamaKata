@@ -38,7 +38,7 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             for (var i = 0; i < 9; i++) _game.AddRoll([1, 0]);
-            _game.AddRoll([5, 5]);// add spare
+            Assert.Equal(10, _game.AddRoll([5, 5]));// add spare
 
             // Act + Assert
             Assert.Equal(11, _game.AddRoll([1, 0]));
@@ -50,7 +50,7 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             for (var i = 0; i < 9; i++) _game.AddRoll([1, 0]);
-            _game.AddRoll([10]);// add strike
+            Assert.Equal(10, _game.AddRoll([10]));// add strike
 
             // Act + Assert
             Assert.Equal(11, _game.AddRoll([1, 0]));
