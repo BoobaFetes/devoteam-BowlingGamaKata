@@ -23,7 +23,7 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [0, 5]
+                [0, 5]  // normal
             ]);
 
             // Act + Assert
@@ -35,8 +35,8 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [4, 4],
-                [4, 3]
+                [4, 4], // normal
+                [4, 3]  // normal
             ]);
 
             // Act + Assert
@@ -48,9 +48,9 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [0, 5],
+                [0, 5], // normal
                 [0, 10],// spare!
-                [5, 1],
+                [5, 1], // normal
             ]);
 
             // Act + Assert
@@ -62,7 +62,7 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [0, 5],
+                [0, 5], // normal
                 [0, 10],// spare!
                 // next game not played !
             ]);
@@ -76,10 +76,10 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [0, 5],
-                [10],// strike!
-                [4,4],
-                [4,4]
+                [0, 5], // normal
+                [10],   // strike!
+                [4,4],  // normal
+                [4,4]   // normal
             ]);
 
             // Act + Assert
@@ -91,8 +91,8 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [0, 5],
-                [10],// strike!     
+                [0, 5], // normal
+                [10],   // strike!     
                 // next game not played !          
             ]);
 
@@ -105,17 +105,17 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5, 5], // spare!
-                [5]  // bonus roll
+                [5, 5], //  1 - spare!
+                [5, 5], //  2 - spare!
+                [5, 5], //  3 - spare!
+                [5, 5], //  4 - spare!
+                [5, 5], //  5 - spare!
+                [5, 5], //  6 - spare!
+                [5, 5], //  7 - spare!
+                [5, 5], //  8 - spare!
+                [5, 5], //  9 - spare!
+                [5, 5], // 10 - spare!
+                [5]     // 11 - bonus roll
             ]);
 
             // Act + Assert
@@ -127,18 +127,18 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // strike
-                [10], // bonus roll + strike
-                [10], // bonus roll + strike
+                [10], //  1 - strike
+                [10], //  2 - strike
+                [10], //  3 - strike
+                [10], //  4 - strike
+                [10], //  5 - strike
+                [10], //  6 - strike
+                [10], //  7 - strike
+                [10], //  8 - strike
+                [10], //  9 - strike
+                [10], // 10 - strike
+                [10], // 11 - bonus roll + strike
+                [10], // 12 - bonus roll + strike
             ]);
 
             // Act + Assert
@@ -150,16 +150,16 @@ namespace BowlingGameKata.Tests
         {
             // Arrange
             _game.AddRolls([
-                /*  1 */ [10], // strike
-                /*  2 */ [10], // strike
-                /*  3 */ [5,5], // spare
-                /*  4 */ [10], // strike
-                /*  5 */ [10], // strike
-                /*  6 */ [5,4], // normal
-                /*  7 */ [10], // strike
-                /*  8 */ [5,5], // spare
-                /*  9 */ [5,4], // normal
-                /* 10 */ [5,4], // normal
+                [10],  //  1 - strike
+                [10],  //  2 - strike
+                [5,5], //  3 - spare
+                [10],  //  4 - strike
+                [10],  //  5 - strike
+                [5,4], //  6 - normal
+                [10],  //  7 - strike
+                [5,5], //  8 - spare
+                [5,4], //  9 - normal
+                [5,4], // 10 - normal
             ]);
 
             // Act + Assert
